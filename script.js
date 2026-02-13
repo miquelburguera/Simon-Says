@@ -5,7 +5,7 @@ const color = [];
     Mostra la notificació al panell notification
     Mostra el color hexadecimal passat per paràmetre
  */
-
+//triar els colors
 function inici() {
     numAleatori = Math.floor(Math.random() * colors.length);
     showNotification(colors[numAleatori]);
