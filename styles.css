@@ -8,6 +8,7 @@ body {
 
 .panell{
     display: grid;
+
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
     grid-auto-rows: minmax(100px, auto);
@@ -20,8 +21,8 @@ body {
     justify-self: center;
     text-align: center;
     padding: 10px;
-    background-color: #333;
-    color: #ffffff;
+    background-color: lightblue;
+    color: black;
     bottom: 0;
     left: 0;
     width: 100%;
@@ -58,6 +59,8 @@ body {
 .buttons{
     grid-column: 2;
     grid-row: 3;
+    background: lightblue;
+    color: black;
     align-self: center;
     justify-self: center
 }
@@ -67,8 +70,8 @@ body {
 }
 
 .card {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     margin: 5px;
     border: 1px solid #ccc;
     transition: background-color 0.3s ease;
@@ -78,54 +81,32 @@ body {
     cursor: pointer;
 }
 
-/* Colores pastel */
 .color1 {
-    background-color: #ffd1dc;
+    background-color: #005f73;
 }
 .color2 {
-    background-color: #ffecd1;
+    background-color: #0a9396;
 }
 .color3 {
-    background-color: #d1ffea;
+    background-color: #94d2bd;
 }
 .color4 {
-    background-color: #e3d1ff;
+    background-color: #e9d8a6;
 }
 .color5 {
-    background-color: #ffbf80;
+    background-color: #ee9b00;
 }
 .color6 {
-    background-color: #ffef96;
+    background-color: #ca6702;
 }
 .color7 {
-    background-color: #aaff80;
+    background-color: #bb3e03;
 }
 .color8 {
-    background-color: #96ffe0;
+    background-color: #ae2012;
 }
 .color9 {
-    background-color: #ff9cf0;
-}
-.color10 {
-    background-color: #d1c2ff;
-}
-.color11 {
-    background-color: #b2b2b2;
-}
-.color12 {
-    background-color: #99e6e6;
-}
-.color13 {
-    background-color: #d98cb3;
-}
-.color14 {
-    background-color: #d6ff80;
-}
-.color15 {
-    background-color: #ffe080;
-}
-.color16 {
-    background-color: #80ffbf;
+    background-color: #9b2226;
 }
 
 
