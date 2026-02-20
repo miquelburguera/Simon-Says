@@ -28,7 +28,10 @@ function showNotification() {
 
         setTimeout(function () {
             notification.style.display = 'none';
-
+            comptadorMostrats += 1;
+            if(comptadorMostrats <sequencia.length ){
+                showNotification(sequencia);
+            }
         }, 1000);
 
 
@@ -37,7 +40,7 @@ function showNotification() {
 function comprovarColor(color) {
     console.log(color)
 
-    if(color === sequencia[0]) {
+    if(color === sequencia.lenght) {
         inici();
     }else{
         console.log('no')
