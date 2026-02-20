@@ -6,28 +6,52 @@ const sequencia = [];
     Mostra el color hexadecimal passat per paràmetre
  */
 //triar els colors
-function inici() {
+function inici(){
+    document.getElementById("botoComencar").hidden = true;
+    nouColor()
+}
+
+function nouColor() {
     numAleatori = Math.floor(Math.random() * colors.length);
-    showNotification(colors[numAleatori]);
     sequencia.push(colors[numAleatori]);
     console.log(sequencia);
+    comptadorMostrats = 0
+    showNotification(sequencia);
+
 }
 
 
-function showNotification(message) {
-    console.log(message)
-    var notification = document.getElementById('notification');
-    notification.style.backgroundColor=message
-    notification.style.display = 'block';
+function showNotification() {
+        var notification = document.getElementById('notification');
+        notification.style.backgroundColor = colors[comptadorMostrats];
+        notification.style.display = 'block';
 
-    setTimeout(function() {
-        notification.style.display = 'none';
-    }, 2000);
+        setTimeout(function () {
+            notification.style.display = 'none';
+
+        }, 1000);
+
+
 }
+
+function comprovarColor(color) {
+    console.log(color)
+
+    if(color === sequencia[0]) {
+        inici();
+    }else{
+        console.log('no')
+
+    }
+}
+
+
+
+
 //
 // let resposta = ""
 //
-// function comprovacolors() {
+// function comprovaColors() {
 //     let resposta = document.getElementById("numAleatori").value
 //     console.log(resposta, paraulaOriginal)
 //     if(resposta.toUpperCase() === paraulaOriginal) {
