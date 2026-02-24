@@ -1,6 +1,8 @@
 const colors = ["#005f73", "#0a9396", "#94d2bd", "#e9d8a6", "#ee9b00", "#ca6702", "#bb3e03", "#ae2012", "#9b2226"];
 const sequencia = [];
 let comptadorResultats;
+
+const missatgeDisplay = document.getElementById("message");
 /*
     Mostra la notificació al panell notification
     Mostra el color hexadecimal passat per paràmetre
@@ -18,6 +20,8 @@ function nouColor() {
     comptadorMostrats = 0
     comptadorResultats=0
     showNotification(sequencia);
+    console.log(missatgeDisplay);
+    missatgeDisplay.innerHTML = "Estas en el nivell "+ sequencia.length;
 
 }
 
@@ -31,7 +35,10 @@ function showNotification() {
             notification.style.display = 'none';
             comptadorMostrats += 1;
             if(comptadorMostrats <sequencia.length ){
-                showNotification(sequencia);
+                setTimeout(function () {
+                    showNotification(sequencia);
+
+                }, 300);
             }
         }, 1000);
 
