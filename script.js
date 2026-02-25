@@ -1,4 +1,4 @@
-const colors = ["#005f73", "#0a9396", "#94d2bd", "#e9d8a6", "#ee9b00", "#ca6702", "#bb3e03", "#ae2012", "#9b2226"];
+const colors = ["#005f73", "#0a9396", "#94d2bd", "#e9d8a6", "#ee9b00", "#ca6702", "#bb3e03", "rgba(174, 32, 18, 0.89)", "#9b2226"];
 const sequencia = [];
 let comptadorResultats;
 
@@ -21,7 +21,7 @@ function nouColor() {
     comptadorResultats=0
     showNotification(sequencia);
     console.log(missatgeDisplay);
-    missatgeDisplay.innerHTML = "Estas en el nivell "+ sequencia.length;
+    missatgeDisplay.innerHTML = "<h1>Estas en el nivell " + sequencia.length + "</h1>"
 
 }
 
@@ -38,7 +38,7 @@ function showNotification() {
                 setTimeout(function () {
                     showNotification(sequencia);
 
-                }, 300);
+                }, 200);
             }
         }, 1000);
 
@@ -55,7 +55,8 @@ function comprovarColor(color) {
                 nouColor()
             }
         } else {
-        console.log('no')
+            console.log('no')
+            missatgeDisplay.innerHTML = '<h3>GAME OVER!!!</h3>' + '<h2>Has arribat al nivell ' + sequencia.length + '</h2>'
 
         }
 
