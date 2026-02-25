@@ -62,15 +62,17 @@ body {
     background: lightblue;
     color: black;
     align-self: center;
-    justify-self: center
+    justify-self: center;
+    background-color: lightblue;
+}
+/*Cuant passem per demunt els color, que es fasin grans amb 0.4 segons, ni es inmediat*/
+button:hover {
+    transform:  scale(1.05);
+    transition: transform 0.4s;
 }
 
-button:hover {
-    /*background-color: rgba(213, 194, 194, 0.11);*/
-
-    transform: translateY(-5px) scale(1.05);
-    transition: transform 0.4s;
-
+button:active {
+    background-color: #7e7e7e;
 }
 
 .row {
@@ -91,30 +93,57 @@ button:hover {
 
 .color1 {
     background-color: #005f73;
+    :hover {
+        background-color: rgba(0, 95, 115, 0.88);
+    }
 }
 .color2 {
     background-color: #0a9396;
+    :hover {
+        background-color: rgba(10, 147, 150, 0.85);
+    }
 }
 .color3 {
     background-color: #94d2bd;
+    :hover {
+        background-color : rgba(148, 210, 189, 0.9);
+    }
 }
 .color4 {
     background-color: #e9d8a6;
+    :hover {
+        background-color: rgba(233, 216, 166, 0.91);
+    }
 }
 .color5 {
     background-color: #ee9b00;
+    :hover {
+        background-color: rgba(238, 155, 0, 0.86);
+    }
 }
 .color6 {
     background-color: #ca6702;
+    :hover {
+        background-color: rgba(202, 103, 2, 0.85);
+    }
 }
 .color7 {
     background-color: #bb3e03;
+    :hover {
+        background-color: rgba(187, 62, 3, 0.88);
+    }
 }
 .color8 {
     background-color: #ae2012;
+    :hover {
+        background-color: rgba(174, 32, 18, 0.85);
+    }
 }
 .color9 {
     background-color: #9b2226;
+    :hover {
+        background-color: rgba(155, 34, 38, 0.85);
+    }
 }
 
 
