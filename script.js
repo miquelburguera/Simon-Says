@@ -61,7 +61,6 @@ function comprovarColor(color) {
             }
         } else {
             gameover = true;
-            console.log('no')
             missatgeDisplay.innerHTML = '<h3>GAME OVER!!!</h3>' + '<h2>Has arribat al nivell ' + sequencia.length + '</h2>'
             document.getElementById("botoReiniciar").hidden = false;
         }
@@ -70,3 +69,4 @@ function comprovarColor(color) {
 }
 
 document.getElementById("botoReiniciar").hidden = true;
+gameover = true;
